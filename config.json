@@ -1,5 +1,5 @@
 {
-  "name": "groupgrid",
+  "name": "Group Grid",
   "identifier": "groupgrid",
   "description": {
       "es-ES": "Agrupa tu contenido para facilitar la búsqueda de información a través de este módulo. ",
@@ -36,7 +36,7 @@
     "separation": "1em",
     "border": true,
     "showText": true,
-    "showIcon": true,
+    "showIcon": true
   },
   "config": [{
       "type": "repeatSection",
