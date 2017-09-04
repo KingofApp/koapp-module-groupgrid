@@ -1,4 +1,4 @@
-# group Module
+# Groud Grid Module
 ===================================
 
 ![groupgrid-popover](images/popover.png)
@@ -15,6 +15,6 @@
 
 ### Details:
 
-- Author: kingofapp
+- Author: Kingofapp
 - Version: 0.0.1
 - Homepage: kingofapp
