@@ -1,0 +1,142 @@
+{
+  "name": "groupgrid",
+  "identifier": "groupgrid",
+  "description": {
+      "es-ES": "Agrupa tu contenido para facilitar la búsqueda de información a través de este módulo. ",
+      "en-US": "Group your content to facilitate the search for information by activating this module."
+  },
+  "documentation": {
+      "es-ES": "modules/groupgrid/documentation/es_ES.md",
+      "en-US": "modules/groupgrid/documentation/en_US.md"
+  },
+  "descriptionShort": {
+      "es-ES": "Agrupa tu contenido para facilitar la búsqueda de información.",
+      "en-US": "Group your content to facilitate the search for information."
+  },
+  "icon": "room",
+  "type": "A",
+  "version": "0.0.1",
+  "author": "kingofapp",
+  "category": ["others"],
+  "price": 0,
+  "subscription": false,
+  "canContain": false,
+  "platforms": [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "view": "modules/groupgrid/index.html",
+  "files": [
+    "modules/groupgrid/controller.js", "modules/groupgrid/style.html"
+  ],
+  "scope": {
+    "menuItems": [],
+    "columns": 2,
+    "separation": "1em",
+    "border": true,
+    "showText": true,
+    "showIcon": true,
+  },
+  "config": [{
+      "type": "repeatSection",
+      "key": "menuItems",
+      "templateOptions": {
+        "label": "Items",
+        "btnText": "Add another item to the menu",
+        "fields": [{
+            "type": "select",
+            "key": "path",
+            "templateOptions": {
+              "label": "Path",
+              "required": true
+            }
+          },
+          {
+            "type": "input",
+            "key": "bgImage",
+            "templateOptions": {
+              "label": "Background Image URL",
+              "placeholder": "(Optional)"
+            }
+          },
+          {
+            "type": "input",
+            "key": "bgColor",
+            "templateOptions": {
+              "label": "Background Color",
+              "placeholder": "(Optional)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "templateOptions": {
+        "label": "Columns",
+        "pattern": "^[0-3]+$",
+        "maxlength": 1,
+        "required": true,
+        "description": "Column number (1 - 3)"
+      },
+      "type": "input",
+      "key": "columns"
+    },
+    {
+      "templateOptions": {
+        "label": "Margin",
+        "maxlength": 5,
+        "required": true,
+        "description": "Margin between items (px,%)"
+      },
+      "type": "input",
+      "key": "separation"
+    },
+    {
+      "type": "checkbox",
+      "key": "border",
+      "templateOptions": {
+        "description": "Item borders",
+        "label": "Border"
+      }
+    },
+    {
+      "type": "checkbox",
+      "key": "showText",
+      "templateOptions": {
+        "description": "Item text",
+        "label": "Show text"
+      }
+    },
+    {
+      "type": "checkbox",
+      "key": "showIcon",
+      "templateOptions": {
+        "description": "Item icon",
+        "label": "Show icon"
+      }
+    }
+  ],
+  "libs": [
+    {
+        "bower": {
+            "PolymerElements/iron-flex-layout": "^1.0.0"
+        },
+        "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
+    }
+  ],
+  "showOn": {
+    "menu": true,
+    "market": true,
+    "dragDrop": true
+  },
+  "images": {
+    "list": "modules/groupgrid/images/list.png",
+    "screenshots": [
+      "modules/groupgrid/images/screenshot01.png"
+    ],
+    "popover": "modules/groupgrid/images/popover.png",
+    "banner": "modules/groupgrid/images/banner.png",
+    "logo": "modules/groupgrid/images/logo.png"
+  }
+}

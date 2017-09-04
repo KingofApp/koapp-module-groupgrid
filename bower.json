@@ -1,0 +1,13 @@
+{
+  "name": "groupgrid",
+  "authors": "kingofapp",
+  "description": "",
+  "keywords": [
+    "kingofapp",
+    "module"
+  ],
+  "license": "MIT",
+  "homepage": "kingofapp",
+  "private": true,
+  "dependencies": {}
+}

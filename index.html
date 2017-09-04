@@ -1,0 +1,8 @@
+<div class="module groupgrid" ng-controller="groupgridController">
+  <koa-grid columns='{{groupgrid.modulescope.columns}}' cell-space='{{groupgrid.modulescope.separation}}'>
+    <a ng-class="groupgrid.modulescope.border ? 'border' : 'X'" style="background-image: url('{{item.backgroundImage}}'); background-color: {{item.backgroundColor}};" href="#{{item.url}}" ng-repeat="item in list" class="elementgrid">
+      <koa-icon ng-if="groupgrid.modulescope.showIcon" class="singleicon" icon="{{item.icon}}"></koa-icon>
+      <p class="textGrid" ng-if="groupgrid.modulescope.showText">{{item.name}}</p>
+    </a>
+  </koa-grid>
+</div>
